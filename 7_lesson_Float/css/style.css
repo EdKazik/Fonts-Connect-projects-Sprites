@@ -1,0 +1,86 @@
+@import url("reset.css");
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.line1 {
+  background: #05043f;
+}
+.line1_box {
+  width: 400px;
+  height: 400px;
+  float: left;
+  border: 4px solid rgb(36, 225, 36);
+}
+.line2 {
+  background: #802525;
+}
+.line2_left_box {
+  float: left;
+}
+.line2_left_block {
+  width: 800px;
+  height: 200px;
+  background: #a43404;
+  border: 4px solid rgb(36, 225, 36);
+}
+.line2_right_box {
+  float: left;
+}
+.line2_right_block {
+  width: 400px;
+  height: 133px;
+  background: #0999c1;
+  border: 4px solid #24e124;
+}
+.line3 {
+  background: #f60fdf;
+}
+.line3_1_box {
+  width: 400px;
+  height: 400px;
+  float: left;
+  border: 4px solid rgb(36, 225, 36);
+}
+.line3_2_box {
+  width: 800px;
+  height: 200px;
+  border: 4px solid rgb(36, 225, 36);
+  float: right;
+  background: #000;
+}
+.line3_3_box {
+  width: 400px;
+  height: 200px;
+  border: 4px solid rgb(36, 225, 36);
+  background: #46044b;
+  float: left;
+}
+.line3_4_box {
+  width: 400px;
+  height: 200px;
+  background: #e1f40b;
+  float: right;
+}
+.line3_5_box {
+  width: 400px;
+  height: 100px;
+  border: 4px solid rgb(36, 225, 36);
+  background: #f5f909;
+  
+}
+.line3_6_box {
+  width: 400px;
+  height: 100px;
+  border: 4px solid rgb(36, 225, 36);
+  background: #181be4;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

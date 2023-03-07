@@ -1,0 +1,133 @@
+@import url(reset.css);
+
+h1 {
+  padding: 20px 0 16px 0px;
+  text-align: center;
+  border-bottom: 12px solid rgb(223, 94, 19);
+  color: rgb(1, 0, 15);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(7, 63, 88);
+  text-align: center;
+}
+
+a[href="https://www.mobile.de/ru/%D0%9C%D0%BE%D1%82%D0%BE%D1%86%D0%B8%D0%BA%D0%BB/BMW-M1000RR-NEU/vhc:motorbike/pg:vipmotorbike/326226483.html"]
+{
+  color: chartreuse;
+  font-weight: 500;
+}
+
+a[href="../index.html"] {
+  color: rgb(14, 221, 48);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+a[href="https://www.hondashop.com.au/product/bikes-for-him/honda-cbr1000rr-r-sp-2022-30th-anniversary-fireblade/"]
+{
+  color: rgb(8, 22, 218);
+  font-weight: 500;
+}
+
+.wrapper {
+  background: rgb(63, 50, 33);
+  margin: 0 auto;
+  padding: 44px 70px;
+  width: 1200px;
+}
+
+.wrapper_moto {
+  margin: 0 auto;
+  width: 1200px;
+  background: rgb(230, 96, 6);
+  padding: 44px 12px;
+  border: 3px solid rgb(82, 82, 82);
+}
+
+.bg_blue {
+  background: rgb(24, 24, 58);
+}
+
+.bg_red {
+  background: rgb(122, 4, 4);
+}
+
+.title {
+  text-align: justify;
+}
+
+.photo-bmw {
+  width: 270px;
+  margin: 32px 0 8px 8px;
+  border: 3px solid rgb(187, 74, 9);
+}
+
+.photo-honda {
+  width: 340px;
+  margin: 32px 0 8px 44px;
+  border: 3px solid rgb(187, 74, 9);
+}
+
+.photo-ducati {
+  width: 340px;
+  margin: 32px 0 8px 44px;
+  border: 3px solid rgb(187, 74, 9);
+}
+
+.MotoGP_photo {
+  width: 1050px;
+  border: 3px solid rgb(100, 4, 4);
+  margin: 20px 0 0 12px;
+}
+
+.MotoGP_block {
+  margin-top: 24px;
+}
+
+.MotoGP_link {
+  font-size: 16px;
+  padding-left: 485px;
+  color: rgb(14, 166, 212);
+}
+
+.folder_bmw_photo {
+  width: 1000px;
+  padding: 0 0 0 220px;
+  margin-bottom: 8px;
+}
+
+.about_m1000rr {
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.folder_honda_photo {
+  width: 1000px;
+  padding: 0 0 0 220px;
+  margin-bottom: 8px;
+}
+
+.folder_ducati_photo {
+  width: 1000px;
+  padding: 0 0 0 220px;
+  margin-bottom: 8px;
+}
+

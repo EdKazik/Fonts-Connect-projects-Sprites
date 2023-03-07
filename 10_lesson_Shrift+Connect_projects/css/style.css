@@ -1,0 +1,141 @@
+
+@import url('reset.css');
+
+body {
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.wrapper {
+    margin: 0 auto;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* HEADER */
+
+.header a {
+    text-decoration: none;
+    color: rgb(244, 82, 12);
+    display: block;
+    padding: 25px 20px;
+    font-size: 18px;
+}
+
+.header {
+    background: rgb(1, 0, 8);
+    opacity: 0.7;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.header_menu > li:hover .home_works_popup_menu {
+    display: block;
+}
+
+.header_menu > li {
+    position: relative;
+}
+
+
+.home_works_popup_menu {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.home_works_popup_menu > li {
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    width: 148px;
+    border: 1px solid black;
+    background: rgb(48, 48, 48);
+}
+
+
+
+.header_menu > li:hover .popup_gallery {
+    display: block;
+}
+
+.popup_gallery {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    border: 1px solid black;
+    background: rgb(48, 48, 48);;
+}
+
+.site {
+position: relative;
+}
+
+.home_works_popup_menu > li:hover .popup_Amelia {
+    display: block;
+}
+
+.popup_Amelia {
+    position: absolute;
+    top: -1%;
+    right: 100%;
+    display: none;
+    padding-right: 4px;
+}
+
+.popup_Amelia > li {
+    border: 1px solid black;
+    width: 148px;
+    background: rgb(48, 48, 48);;
+}
+ 
+
+/* MAIN */
+.main {
+   min-height: calc(100vh - 160px);
+}
+
+/* FOOTER */
+
+.footer {
+    background: rgb(23, 108, 2);
+    padding: 10px 0;
+    opacity: 0.7;
+   
+}
+
+.footer_social {
+    width: 300px;
+    text-align: center;
+}
+
+.footer_logo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
