@@ -32,10 +32,9 @@ h1 {
 
 .header a {
     text-decoration: none;
-    color: rgb(244, 82, 12);
+    color: rgb(13, 158, 242);
     display: block;
     padding: 25px 20px;
-    font-size: 18px;
 }
 
 .header {
@@ -59,6 +58,9 @@ h1 {
     position: relative;
 }
 
+.header_menu a.active {
+    color: rgb(239, 142, 15);
+}
 
 .home_works_popup_menu {
     text-align: center;
@@ -116,26 +118,36 @@ position: relative;
 
 /* MAIN */
 .main {
-   min-height: calc(100vh - 160px);
+   min-height: calc(100vh - 174px);
 }
 
 /* FOOTER */
 
 .footer {
-    background: rgb(23, 108, 2);
-    padding: 10px 0;
+    background: rgb(134, 133, 134);
+    padding: 15px 0;
     opacity: 0.7;
-   
 }
 
 .footer_social {
-    width: 300px;
     text-align: center;
 }
 
+.footer_social h1 {
+    color: rgb(212, 227, 7);
+}
+
 .footer_logo {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
     margin-top: 20px;
 }
+ .footer_logo > ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+ }
+
+ .footer_icon {
+    width: 28px;
+    height: 28px;
+ }
+ 
