@@ -4,7 +4,7 @@ h1 {
   padding: 20px 0 16px 0px;
   text-align: center;
   border-bottom: 12px solid rgb(223, 94, 19);
-  color: rgb(1, 0, 15);
+  /* color: rgb(1, 0, 15); */
   font-size: 40px;
   font-weight: 700;
 }
@@ -23,8 +23,12 @@ h2 {
 h3 {
   font-size: 20px;
   font-weight: 700;
-  color: rgb(7, 63, 88);
+  color: rgba(14, 158, 224, 0.4);
   text-align: center;
+}
+
+a {
+  color: whitesmoke;
 }
 
 a[href="https://www.mobile.de/ru/%D0%9C%D0%BE%D1%82%D0%BE%D1%86%D0%B8%D0%BA%D0%BB/BMW-M1000RR-NEU/vhc:motorbike/pg:vipmotorbike/326226483.html"]
@@ -48,7 +52,7 @@ a[href="https://www.hondashop.com.au/product/bikes-for-him/honda-cbr1000rr-r-sp-
 .wrapper {
   background: rgb(63, 50, 33);
   margin: 0 auto;
-  padding: 44px 70px;
+  padding: 15px 70px;
   width: 1200px;
 }
 
@@ -100,10 +104,19 @@ a[href="https://www.hondashop.com.au/product/bikes-for-him/honda-cbr1000rr-r-sp-
   margin-top: 24px;
 }
 
+.MotoGP_block > ul > li {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.MotoGP_block > ul > li + li {
+  margin-top: 10px;
+}
+
 .MotoGP_link {
   font-size: 16px;
-  padding-left: 485px;
-  color: rgb(14, 166, 212);
+  color: rgb(40, 212, 14);
 }
 
 .folder_bmw_photo {
