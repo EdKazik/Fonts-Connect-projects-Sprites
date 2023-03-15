@@ -33,9 +33,9 @@ h1 {
 
 .header a {
   text-decoration: none;
-  color: rgb(13, 158, 242);
-  /* display: block; */
-  font-size: 16px;
+  color: rgb(168, 219, 248);
+  display: block;
+  font-size: 10px;
 }
 
 .header {
@@ -48,7 +48,7 @@ h1 {
   text-transform: uppercase;
   font-family: "Montserrat";
   font-weight: bold;
-  font-size: 28px;
+  font-size: 0;
 }
 
 .header_menu > li:hover .home_works_popup_menu {
@@ -60,9 +60,9 @@ h1 {
 }
 
 .header_menu > li {
-  position: relative;
+  /* position: relative; */
   display: inline-block;
-  font-size: 16px;
+  font-size: 10px;
   vertical-align: middle;
 }
 
@@ -74,27 +74,78 @@ h1 {
   color: rgb(239, 142, 15);
 }
 
-.header_icons + text {
-  vertical-align: middle;
-}
-.header_icons_text a {
-  background: rgb(48, 48, 48);
+.header_menu a:hover {
+  color: rgb(251, 252, 252);
 }
 
-.header_icons_svg {
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
-  padding: 20px 0px;
+.header_icons_text {
+  /* background: rgba(130, 127, 127, 0.7);
+  display: block;
+  font-size: 12px; */
+  /* vertical-align: middle; */
 }
 
-.header_icons_svg use:hover {
-  /* fill: white; */
+.main_icon_text > a {
+  position: relative;
+  padding-left: 23px;
+  text-decoration: none;
+  display: block;
+  fill: whitesmoke;
+}
+
+.main_icon_svg {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: -40%;
+  left: 0;
+}
+
+.header_icons_text > ul > li ul {
+  /* width: 100%; */
+}
+/* .header_icons_svg {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
+
+.home_works_icon_text :hover use {
+  fill: rgb(252, 253, 253);
+  color: aliceblue;
+}
+
+.home_works_icon_svg {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: -50%;
+  right: 0;
+  /* background: rgb(142, 137, 137, 0); */
+}
+
+.home_works_icon_text {
+  position: relative;
+}
+
+.home_works_icon_text > a {
+  position: relative;
+  padding-right: 23px;
+  text-decoration: none;
+  display: block;
+  fill: whitesmoke;
+}
+
+.home_works_icon_text span {
+  display: inline-block;
 }
 
 .home_works_popup_menu {
+  padding-top: 5px;
   text-align: center;
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 100%;
   left: 0;
@@ -104,22 +155,47 @@ h1 {
   margin-bottom: 2px;
   text-transform: uppercase;
   border: 1px solid black;
-  background: rgb(48, 48, 48);
-}
-
-.home_works_popup_menu > li > ul {
-  width: 100%;
+  background: rgba(76, 74, 74, 0.8);
 }
 
 .header_menu > li:hover .gallery_popup {
   display: block;
 }
 
+.gallery_icon_text {
+  position: relative;
+  padding: 3px 1px 0 0;
+}
+
+.gallery_icon_text > a {
+  position: relative;
+  padding-left: 23px;
+  display: block;
+  fill: whitesmoke;
+}
+
+.gallery_icon_text span {
+  margin-bottom: 2px;
+  display: inline-block;
+}
+
+.gallery_icon_svg {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+}
+
 .gallery_popup {
   position: absolute;
   top: 100%;
   left: 0;
-  display: none;
+  /* display: none; */
+  padding-top: 5px;
+}
+
+.gallery_popup > li {
   border: 1px solid black;
   background: rgb(48, 48, 48);
   text-align: center;
@@ -129,16 +205,28 @@ h1 {
   position: relative;
 }
 
+.site a {
+  position: relative;
+}
+
+.site_icon_svg {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: -60%;
+  left: -5%;
+}
+
 .home_works_popup_menu > li:hover .popup_Amelia {
   display: block;
 }
 
 .popup_Amelia {
   position: absolute;
-  top: -1%;
+  top: -2%;
   right: 100%;
-  display: none;
-  padding-right: 4px;
+  /* display: none; */
+  padding-right: 2px;
 }
 
 .popup_Amelia > li {
@@ -172,7 +260,7 @@ h1 {
   fill: rgb(13, 255, 0);
 }
 
-.footer_social h1 {
+.footer_social > h1 {
   color: rgb(212, 227, 7);
 }
 
