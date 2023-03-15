@@ -10,27 +10,52 @@
   <body>
     <video class="video" src="video/1.mp4" autoplay muted loop></video>
 
-<!-- Wrapper -->
-<div class="wrapper">
+    <!-- Wrapper -->
+    <div class="wrapper">
       <!-- Header -->
       <div class="header">
         <div class="container">
           <ul class="header_menu">
-            <li><a href="#"><img src="image/Hillel-logo.png" alt="logo" height="70" width="70"></a></li>
-          
             <li>
-              <a class="active" href="#">Main</a>
+              <a href="#"
+                ><img
+                  src="image/Hillel-logo.png"
+                  alt="logo"
+                  height="70"
+                  width="70"
+              /></a>
             </li>
-            <li>
-              <a href="#">Gallery</a>
+
+            <li class="header_icons_text">
+              <a class="active" href="#">
+                <svg class="header_icons_svg">
+                  <use href="svg/sprites.svg#home"></use>
+                </svg>
+
+                <span>Main</span>
+              </a>
+            </li>
+            <li class="header_icons_text">
+              <a href="#">
+                <svg class="header_icons_svg">
+                  <use href="svg/sprites.svg#gallery"></use>
+                </svg>
+                <span>Gallery</span>
+              </a>
               <ul class="gallery_popup">
                 <li>
                   <a href="../9_lesson_Position/index.html">Position</a>
                 </li>
               </ul>
             </li>
-            <li>
-              <a href="#">Home works</a>
+            <li class="header_icons_text">
+              <a href="#">
+                <svg class="header_icons_svg">
+                  <use href="svg/sprites.svg#arrow_down"></use>
+                </svg>
+                <span>Home works</span>
+              </a>
+
               <ul class="home_works_popup_menu">
                 <li>
                   <a href="../5_lesson_Hobby/index.html">Hobby</a>
@@ -42,17 +67,24 @@
                   <a href="../7_lesson_Float/index.html">Float</a>
                 </li>
                 <li class="site">
-                  <a href="#">go to site</a>
+                  <a href="#">go to site </a>
                   <ul class="popup_Amelia">
                     <li>
-                      <a href="../8_lesson_Amelia-FlexBox/index.html" target="_blank">Amelia</a
+                      <a
+                        href="../8_lesson_Amelia-FlexBox/index.html"
+                        target="_blank"
+                        >Amelia</a
                       >
                     </li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li><a href="#"><img src="image/hillel.png" alt="logo" height="70" width="70"></a></li>
+            <li>
+              <a href="#"
+                ><img src="image/hillel.png" alt="logo" height="70" width="70"
+              /></a>
+            </li>
           </ul>
         </div>
       </div>
