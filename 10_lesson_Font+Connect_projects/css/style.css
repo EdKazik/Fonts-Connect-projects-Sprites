@@ -4,9 +4,11 @@ body {
   font-family: "Roboto";
   font-weight: 500;
 }
+
 .wrapper {
   margin: 0 auto;
 }
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -33,7 +35,7 @@ h1 {
 
 .header a {
   text-decoration: none;
-  color: rgb(168, 219, 248);
+  color: rgb(54, 79, 220);
   display: block;
   font-size: 10px;
 }
@@ -60,7 +62,6 @@ h1 {
 }
 
 .header_menu > li {
-  /* position: relative; */
   display: inline-block;
   font-size: 10px;
   vertical-align: middle;
@@ -78,56 +79,46 @@ h1 {
   color: rgb(251, 252, 252);
 }
 
-.header_icons_text {
-  /* background: rgba(130, 127, 127, 0.7);
-  display: block;
-  font-size: 12px; */
-  /* vertical-align: middle; */
+.main_icon_text {
+  background: rgb(128, 128, 128, 0.7);
+  padding: 1px 0 2px 0;
 }
 
 .main_icon_text > a {
   position: relative;
-  padding-left: 23px;
+  padding-left: 18px;
   text-decoration: none;
   display: block;
-  fill: whitesmoke;
 }
 
 .main_icon_svg {
   width: 22px;
   height: 22px;
   position: absolute;
-  bottom: -40%;
-  left: 0;
-}
-
-.header_icons_text > ul > li ul {
-  /* width: 100%; */
-}
-/* .header_icons_svg {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-} */
-
-.home_works_icon_text :hover use {
-  fill: rgb(252, 253, 253);
-  color: aliceblue;
+  top: -55%;
+  left: -5%;
+  fill: aqua;
 }
 
 .home_works_icon_svg {
   width: 22px;
   height: 22px;
   position: absolute;
-  bottom: -50%;
+  bottom: -30%;
   right: 0;
-  /* background: rgb(142, 137, 137, 0); */
+  fill: aqua;
 }
 
 .home_works_icon_text {
   position: relative;
+  background: rgb(128, 128, 128, 0.7);
+}
+
+.home_works_icon_text:hover .home_works_popup_menu {
+  opacity: 1;
+  z-index: 1;
+  top: 100%;
+  left: 0;
 }
 
 .home_works_icon_text > a {
@@ -140,31 +131,32 @@ h1 {
 
 .home_works_icon_text span {
   display: inline-block;
+  padding: 2px 0 2px 1px;
 }
 
 .home_works_popup_menu {
   padding-top: 5px;
   text-align: center;
-  /* display: none; */
   position: absolute;
-  top: 100%;
+  top: -200%;
   left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 2s ease-in-out;
+  /* transition: all 2s cubic-bezier(0.12, 1, 0.94, -0.01); */
 }
 
 .home_works_popup_menu > li {
   margin-bottom: 2px;
   text-transform: uppercase;
   border: 1px solid black;
-  background: rgba(76, 74, 74, 0.8);
-}
-
-.header_menu > li:hover .gallery_popup {
-  display: block;
+  background: rgba(151, 151, 151, 0.8);
 }
 
 .gallery_icon_text {
   position: relative;
   padding: 3px 1px 0 0;
+  background: rgb(128, 128, 128, 0.7);
 }
 
 .gallery_icon_text > a {
@@ -177,6 +169,7 @@ h1 {
 .gallery_icon_text span {
   margin-bottom: 2px;
   display: inline-block;
+  padding-bottom: 1px;
 }
 
 .gallery_icon_svg {
@@ -185,19 +178,30 @@ h1 {
   position: absolute;
   bottom: -10%;
   left: 0;
+  fill: aqua;
 }
 
 .gallery_popup {
   position: absolute;
+  top: -100%;
+  left: -700%;
+  padding-top: 5px;
+  opacity: 0;
+  z-index: -1;
+  transition: all 2s ease-in-out;
+  /* transition: all 3s cubic-bezier(0.34, 0.79, 0.65, 0.39); */
+}
+
+.gallery_icon_text:hover .gallery_popup {
+  opacity: 1;
+  z-index: 1;
   top: 100%;
   left: 0;
-  /* display: none; */
-  padding-top: 5px;
 }
 
 .gallery_popup > li {
   border: 1px solid black;
-  background: rgb(48, 48, 48);
+  background: rgba(151, 151, 151, 0.8);
   text-align: center;
 }
 
@@ -213,30 +217,37 @@ h1 {
   width: 22px;
   height: 22px;
   position: absolute;
-  top: -60%;
-  left: -5%;
+  top: -30%;
+  left: 0%;
 }
 
-.home_works_popup_menu > li:hover .popup_Amelia {
-  display: block;
+.site:hover .popup_Amelia {
+  opacity: 1;
+  z-index: 1;
+  bottom: -7%;
+  right: 100%;
 }
 
 .popup_Amelia {
   position: absolute;
-  top: -2%;
-  right: 100%;
-  /* display: none; */
+  bottom: -700%;
+  right: -100%;
   padding-right: 2px;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: all 2s cubic-bezier(0.41, 1.08, 0.04, -0.42);
 }
 
 .popup_Amelia > li {
   border: 1px solid black;
-  background: rgb(48, 48, 48);
+  background: rgba(151, 151, 151, 0.8);
 }
 
 /* MAIN */
 .main {
-  min-height: calc(100vh - 235px);
+  min-height: calc(100vh - 140px);
 }
 
 /* FOOTER */
