@@ -21,6 +21,12 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
 .video {
   position: fixed;
   top: 0;
@@ -35,9 +41,9 @@ h1 {
 
 .header a {
   text-decoration: none;
-  color: rgb(54, 79, 220);
+  color: rgb(45, 57, 126);
   display: block;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .header {
@@ -58,12 +64,12 @@ h1 {
 }
 
 .header_menu > li > ul {
-  width: 100%;
+  min-width: 100%;
 }
 
 .header_menu > li {
   display: inline-block;
-  font-size: 10px;
+  font-size: 18px;
   vertical-align: middle;
 }
 
@@ -95,8 +101,9 @@ h1 {
   width: 22px;
   height: 22px;
   position: absolute;
-  top: -55%;
-  left: -5%;
+  top: 50%;
+  left: -3%;
+  margin-top: -11px;
   fill: aqua;
 }
 
@@ -104,14 +111,16 @@ h1 {
   width: 22px;
   height: 22px;
   position: absolute;
-  bottom: -30%;
+  bottom: 50%;
   right: 0;
+  margin-bottom: -11px;
   fill: aqua;
 }
 
 .home_works_icon_text {
   position: relative;
   background: rgb(128, 128, 128, 0.7);
+  font-size: 0;
 }
 
 .home_works_icon_text:hover .home_works_popup_menu {
@@ -126,12 +135,13 @@ h1 {
   padding-right: 23px;
   text-decoration: none;
   display: block;
+  font-size: 18px;
   fill: whitesmoke;
 }
 
 .home_works_icon_text span {
   display: inline-block;
-  padding: 2px 0 2px 1px;
+  padding: 1px 0 0px 1px;
 }
 
 .home_works_popup_menu {
@@ -155,29 +165,31 @@ h1 {
 
 .gallery_icon_text {
   position: relative;
-  padding: 3px 1px 0 0;
+  padding: 1px 3px 0 0;
   background: rgb(128, 128, 128, 0.7);
+  font-size: 0px;
 }
 
 .gallery_icon_text > a {
   position: relative;
   padding-left: 23px;
   display: block;
+  font-size: 18px;
   fill: whitesmoke;
 }
 
 .gallery_icon_text span {
-  margin-bottom: 2px;
   display: inline-block;
-  padding-bottom: 1px;
+  font-size: 18px;
 }
 
 .gallery_icon_svg {
   width: 18px;
   height: 18px;
   position: absolute;
-  bottom: -10%;
-  left: 0;
+  bottom: 50%;
+  left: 1%;
+  margin-bottom: -9px;
   fill: aqua;
 }
 
@@ -188,8 +200,8 @@ h1 {
   padding-top: 5px;
   opacity: 0;
   z-index: -1;
-  transition: all 2s ease-in-out;
-  /* transition: all 3s cubic-bezier(0.34, 0.79, 0.65, 0.39); */
+  /* transition: all 2s ease-in-out; */
+  transition: all 3s cubic-bezier(0.34, 0.79, 0.65, 0.39);
 }
 
 .gallery_icon_text:hover .gallery_popup {
@@ -217,14 +229,15 @@ h1 {
   width: 22px;
   height: 22px;
   position: absolute;
-  top: -30%;
+  top: 50%;
   left: 0%;
+  margin-top: -11px;
 }
 
 .site:hover .popup_Amelia {
   opacity: 1;
   z-index: 1;
-  bottom: -7%;
+  bottom: -5%;
   right: 100%;
 }
 
@@ -233,8 +246,7 @@ h1 {
   bottom: -700%;
   right: -100%;
   padding-right: 2px;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
   opacity: 0;
   z-index: -1;
   transition: all 2s cubic-bezier(0.41, 1.08, 0.04, -0.42);
@@ -247,14 +259,35 @@ h1 {
 
 /* MAIN */
 .main {
-  min-height: calc(100vh - 140px);
+  min-height: calc(100vh - 95px);
 }
 
 /* FOOTER */
 
 .footer {
   background: rgba(82, 82, 82, 0.4);
-  padding: 15px 0;
+  padding: 30px 0;
+  position: relative;
+  font-size: 0;
+}
+
+.footer_box_hover {
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  background: #0a0a0a7b;
+  bottom: 10%;
+  right: 30%;
+  transition: all 1s ease-in-out;
+  padding: 0px 10px;
+  border: 3px solid yellowgreen;
+  border-radius: 3px;
+}
+
+.footer_box_hover > h2 {
+  color: rgb(254, 253, 255);
+  border-bottom: 2px solid rgba(5, 179, 173, 0.612);
+  margin-top: 8px;
 }
 
 .footer_social {
@@ -265,26 +298,55 @@ h1 {
   text-decoration: none;
   display: block;
   fill: whitesmoke;
+  font-size: 16px;
 }
 
 .footer a:hover {
   fill: rgb(13, 255, 0);
 }
 
-.footer_social > h1 {
-  color: rgb(212, 227, 7);
+.footer_social > a {
+  color: rgb(7, 227, 36);
+  border: 2px solid rgb(54, 79, 220);
+  background: yellow;
+  padding: 0px 10px;
+  position: fixed;
+  bottom: 10%;
+  right: 20%;
+
+  /* bottom: 0;
+  right: 0;
+  transform: translate(-230%, -150%); */
 }
 
 .footer_logo {
-  margin-top: 20px;
+  border: 3px solid rgba(19, 39, 65, 0.561);
+  border-radius: 2px;
+  background: rgba(128, 128, 128, 0.664);
+  margin: 25px 15px;
+  transform: rotate(45deg);
 }
+
 .footer_logo > ul {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+}
+
+.footer_logo > ul > li {
+  margin: 3px 3px;
+}
+
+.footer_logo > ul > li > a {
+  border: 1px solid whitesmoke;
 }
 
 .footer_icon {
   width: 28px;
   height: 28px;
+  transform: rotate(-45deg);
+  padding: 1px 3px 0px 1px;
+}
+
+.footer_social:hover .footer_box_hover {
+  opacity: 1;
+  z-index: 1;
 }
