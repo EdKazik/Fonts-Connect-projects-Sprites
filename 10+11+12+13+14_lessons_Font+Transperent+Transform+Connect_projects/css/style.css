@@ -342,12 +342,39 @@ h2 {
   width: 280px;
 }
 
+.svg_animation_bike path {
+  stroke-dashoffset: 33000px;
+  stroke-dasharray: 33000px;
+  animation: bike 6s ease-in-out forwards infinite;
+}
+
+@keyframes bike {
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+}
+
 .svg_animation_sport_bike {
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
   width: 280px;
+  animation: sportbike 4s ease-in-out forwards infinite;
+}
+
+@keyframes sportbike {
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+    fill: rgba(0, 0, 0, 0.603);
+  }
+}
+
+.svg_animation_sport_bike path {
+  stroke-dashoffset: 35000px;
+  stroke-dasharray: 35000px;
 }
 
 /* FOOTER */
@@ -362,11 +389,6 @@ h2 {
   display: block;
   fill: whitesmoke;
   font-size: 16px;
-}
-.footer_logo a:hover {
-  /* fill: rgb(255, 30, 0); */
-
-  /* transform: rotate(360deg); */
 }
 
 .footer_link_hover_me {
@@ -442,10 +464,6 @@ h2 {
   border-radius: 2px;
   background: rgba(233, 218, 6, 0.74);
   /* margin-bottom: 15px; */
-}
-
-.footer_logo > ul > li {
-  /* margin: 3px 3px; */
 }
 
 .footer_logo > ul > li {
