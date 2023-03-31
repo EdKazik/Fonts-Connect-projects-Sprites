@@ -64,10 +64,13 @@ a {
   color: blueviolet;
 }
 
+.header_logo > a {
+  display: block;
+}
+
 /* MAIN */
 
 /* AMELIA BOX */
-
 
 .amelia_box .container {
   display: flex;
@@ -77,6 +80,7 @@ a {
 
 .amelia_box_left {
   flex: 1 1 50%;
+  text-align: center;
 }
 
 .amelia_box_left > p {
@@ -84,7 +88,7 @@ a {
 }
 
 .amelia_box_left > h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .amelia_box_right {
@@ -102,15 +106,14 @@ a {
   gap: 65px;
   padding-left: 15px;
 }
-.bottons a{
+.bottons a {
   display: block;
   padding: 20px 31px;
   border: 1px solid #81a36b;
 }
-.bottons a:hover{
+.bottons a:hover {
   color: aqua;
 }
-
 
 button {
   font-family: "Roboto";
@@ -135,7 +138,7 @@ button {
 
 .about > h3 {
   margin-bottom: 52px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* *TODO: PRICE */
@@ -146,7 +149,7 @@ button {
   margin: 0 auto;
 }
 
-.price > div ul {
+.price-box {
   display: flex;
   justify-content: space-between;
 }
@@ -155,14 +158,13 @@ button {
   text-align: center;
 }
 
-li > img {
+.img > img {
   margin-bottom: 20px;
 }
 
 .price-box > li > p {
-  font-family: 'Montserrat', sans-serif; 
+  font-family: "Montserrat", sans-serif;
 }
-
 
 /* WORKS*/
 
@@ -174,15 +176,16 @@ li > img {
 }
 .how_we_work_img {
   flex: 1 1 50%;
-  height: 560px
 }
 
 .how_we_work_img img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
 .how_we_work_text {
-   flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 
 .how_we_work_text > h3 {
@@ -236,7 +239,7 @@ li > img {
 }
 
 .flex-container a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-contact a {
@@ -258,4 +261,238 @@ li > img {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-align: center;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.burger_menu > p {
+  width: 100%;
+  height: 30%;
+  background: #000;
+}
+
+.burger_menu::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: rgb(0, 0, 0);
+}
+
+.burger_menu::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 30%;
+  background: rgb(52, 8, 207);
+}
+
+@media screen and (max-width: 1140px) {
+  /* Header */
+  body {
+    font-size: 14px;
+  }
+  .header_text > ul {
+    gap: 40px;
+  }
+
+  /* Main */
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+  span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .amelia_box .container {
+    gap: 10px;
+  }
+  .amelia_box_left > p {
+    margin: 20px 0;
+  }
+  .buy_flower_botton,
+  .bottons a {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+  .bottons {
+    justify-content: space-around;
+  }
+  .about {
+    padding: 40px 15px;
+  }
+  .about > h3 {
+    margin-bottom: 25px;
+  }
+  .price {
+    padding: 20px 0;
+  }
+  .price-box {
+    flex-flow: wrap;
+  }
+  .img > img {
+    max-width: 55px;
+    max-height: 55px;
+    margin-bottom: 10px;
+  }
+
+  .how_we_work {
+    padding: 30px 0;
+    gap: 10px;
+  }
+  .our_works {
+    padding-bottom: 60px;
+  }
+  .our_works > h3 {
+    margin-bottom: 30px;
+  }
+  .work_cards {
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .work_card {
+    padding: 5px 5px 15px;
+    flex: 0 1 33%;
+  }
+  .work_card > img {
+    max-width: 300;
+    max-height: 380;
+  }
+  .work_card p {
+    padding-top: 9px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 15px 0;
+  }
+  .flex-container {
+    margin-bottom: 15px;
+  }
+  .footer-contact ul > li + li {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Header */
+  .header {
+    margin-bottom: 10px;
+  }
+  .header_text > ul {
+    display: none;
+  }
+
+  .header_logo img {
+    max-width: 115px;
+    max-height: 25px;
+  }
+
+  .burger_menu {
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    background: transparent;
+    position: relative;
+  }
+
+  /* Main */
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 8px;
+  }
+  .amelia_box .container {
+    flex-flow: column;
+  }
+  .amelia_box_right img {
+    max-width: 270px;
+    max-height: 330px;
+    text-align: center;
+  }
+
+  .bottons {
+    justify-content: center;
+  }
+
+  .img > img {
+    max-width: 35px;
+    max-height: 35px;
+    margin-bottom: 5px;
+  }
+
+  .how_we_work {
+    flex-flow: wrap;
+  }
+  .how_we_work_img {
+    order: 2;
+    text-align: center;
+  }
+  .how_we_work_text {
+    order: 1;
+    text-align: center;
+  }
+  .how_we_work_text > h3 {
+    margin-bottom: 20px;
+  }
+  .how_we_work_img > img {
+    max-width: 280px;
+    max-height: 340px;
+  }
+  .our_works {
+    padding-bottom: 10px;
+  }
+  .flex-container {
+    flex-flow: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-social ul {
+    justify-content: center;
+    gap: 5px;
+  }
+  .flex-container h3 {
+    margin-bottom: 15px;
+  }
+  .footer-contact {
+    order: 2;
+  }
+  .footer-social {
+    order: 3;
+  }
+  .flex-container > ul {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .price-box {
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .buy_flower_botton,
+  .bottons a {
+    font-size: 8px;
+    padding: 8px 14px;
+  }
 }
